@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter 7 Assignment</title>
+    <script>
+        var books = ["War and Peace", "Huckleberry Finn", "The Return of the Native", "A Christmas Carol", "Exodus"];
+        var authors = ["Tolstoy", "Twain", "Hardy", "Dickens", "Uris"];
+        var author_title = [];
+        for (var i = 0; i < books.length; i++) {
+            var lastName = prompt("What is the last name of the author for the book? " + books[i]);
+            document.write("<strong>Book: </strong>" + books[i] + " " + "<strong>Author:</strong> " + lastName + "<br>");
+            author_title.push(lastName + " wrote " + books[i])
+        }
+        document.write("************************* <br>");
+        console.log(author_title)
+        for (var i = 0; i < author_title.length; i++) {
+
+            document.write(author_title[i] + " <br>");
+
+        }
+        document.write("************************* <br>");
+
+        author_title.pop();
+        console.log(author_title)
+        for (var i = 0; i < author_title.length; i++) {
+            document.write(author_title[i] + " <br>");
+        }
+
+        document.write("************************* <br>");
+
+        author_title.sort();
+        for (var i = 0; i < author_title.length; i++) {
+            document.write(author_title[i] + " <br>");
+
+        }
+    </script>
+</head>
+
+<body>
+</body>
+</html>
